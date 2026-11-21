@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Epic Photography — capturing weddings, portraits, events, fashion and life's unforgettable moments.">
+<title>Epic Photography | Every Frame, a Feeling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171717;--muted:#777;--paper:#fff;--soft:#f5f4f1;--line:#e8e6e1;--accent:#b89b72}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,90%);margin:auto}
+header{height:82px;display:flex;align-items:center;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.12em}.monogram{width:44px;height:44px;border:1.5px solid #171717;display:grid;place-items:center;font-family:'Playfair Display',serif;font-size:18px;letter-spacing:-.08em}.brand small{display:block;font-size:9px;letter-spacing:.28em;color:#777;margin-top:3px}.links{display:flex;gap:32px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.links a:hover{color:var(--accent)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:14px 22px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);transition:.25s}.nav-cta:hover,.btn:hover{background:white;color:var(--ink)}.menu{display:none;background:none;border:0;font-size:25px}
+.hero{min-height:660px;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:5%;padding:72px 0}.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:700}.hero h1{font:600 clamp(48px,6vw,78px)/1.05 'Playfair Display',serif;letter-spacing:-.04em;margin:22px 0}.hero h1 em{font-weight:500;color:#9b876b}.hero p{color:var(--muted);line-height:1.9;max-width:440px;font-size:15px;margin:0 0 30px}.hero-photo{height:540px;position:relative}.hero-photo img{width:100%;height:100%;object-fit:cover}.photo-note{position:absolute;bottom:24px;left:-28px;background:white;padding:18px 24px;box-shadow:0 12px 35px #0001;font:italic 16px 'Playfair Display',serif}
+.intro{text-align:center;padding:95px 0 75px;background:var(--soft)}.intro h2,.section-title{font:600 clamp(34px,4vw,48px)/1.15 'Playfair Display',serif;margin:16px 0}.intro p{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.9;font-size:14px}
+section{scroll-margin-top:82px}.services{padding:100px 0}.section-head{text-align:center;margin-bottom:48px}.section-head p{color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{position:relative;height:350px;overflow:hidden;background:#ddd}.service img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.service:hover img{transform:scale(1.06)}.service:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#0009)}.service-label{position:absolute;z-index:1;bottom:24px;left:25px;color:white}.service-label span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#e5d6c1}.service-label h3{font:500 26px 'Playfair Display',serif;margin:7px 0 0}
+.portfolio{background:var(--soft);padding:100px 0}.gallery{display:grid;grid-template-columns:1.1fr .9fr 1fr;grid-template-rows:250px 250px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover}.gallery .tall{grid-row:span 2}.gallery .wide{grid-column:span 2}
+.quote{padding:100px 0;text-align:center}.quote blockquote{max-width:850px;margin:22px auto;font:500 clamp(28px,4vw,44px)/1.3 'Playfair Display',serif}.quote cite{font-style:normal;color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.contact{background:#171717;color:white;padding:95px 0}.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start}.contact h2{font:600 52px/1.05 'Playfair Display',serif;margin:16px 0}.contact p{color:#aaa;line-height:1.8}.contact-details{margin-top:35px;color:#ddd;line-height:2.2;font-size:14px}.form{display:grid;gap:14px}.form input,.form select,.form textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #555;padding:15px 2px;color:white;font:14px 'DM Sans',sans-serif;outline:none}.form select option{color:#171717}.form textarea{min-height:90px;resize:vertical}.form .btn{cursor:pointer;margin-top:12px;width:max-content;background:white;color:#171717;border-color:white}.form .btn:hover{background:transparent;color:white}
+footer{background:#111;color:#777;padding:25px 0;font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{color:white;letter-spacing:.15em}
+@media(max-width:800px){.links{display:none;position:absolute;top:81px;left:0;right:0;background:white;padding:25px 5%;flex-direction:column;gap:22px;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.hero-photo{height:430px;margin-left:20px}.photo-note{left:-20px}.grid{grid-template-columns:repeat(2,1fr)}.service{height:300px}.contact-inner{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:210px 210px 210px}.gallery .tall{grid-row:span 2}.gallery .wide{grid-column:span 2}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.service{height:360px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.hero h1{font-size:49px}.contact h2{font-size:43px}.intro,.services,.portfolio,.quote,.contact{padding:70px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="monogram">EP</span><span>EPIC PHOTOGRAPHY<small>EVERY FRAME, A FEELING</small></span></a>
+<nav class="links" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="#contact">Book a shoot&nbsp; ↗</a><button class="menu" id="menu" aria-label="Open menu">☰</button>
+</div></header>
+<main>
+<section class="wrap hero" id="home">
+<div><div class="eyebrow">Photography · Films · Stories</div><h1>Moments pass.<br><em>Memories stay.</em></h1><p>From once-in-a-lifetime celebrations to the little moments in between, we create photographs that bring your story to life.</p><a class="btn" href="#portfolio">Explore our work&nbsp; ↗</a></div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=85" alt="Couple embracing during a wedding photoshoot"><div class="photo-note">Your story, beautifully told.</div></div>
+</section>
+<section class="intro" id="about"><div class="wrap"><div class="eyebrow">A little about us</div><h2>Not just pictures. Pieces of your story.</h2><p>At Epic Photography, we believe every person, place and celebration has a story worth remembering. With a thoughtful eye, creative direction and a love for genuine moments, we turn them into timeless frames.</p></div></section>
+<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we capture</div><h2 class="section-title">Every occasion. Every emotion.</h2><p>One team for all the moments you want to remember.</p></div>
+<div class="grid">
+<article class="service"><img src="https://images.unsplash.com/photo-151 свад?auto=format&fit=crop&w=900&q=80" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80'" alt="Wedding photography"><div class="service-label"><span>01 / Celebrations</span><h3>Wedding & Engagement</h3></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Portrait photography"><div class="service-label"><span>02 / People</span><h3>Portraits & Personal</h3></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Event photography"><div class="service-label"><span>03 / Gatherings</span><h3>Events & Birthdays</h3></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Fashion photography"><div class="service-label"><span>04 / Style</span><h3>Fashion & Portfolio</h3></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="Family photography"><div class="service-label"><span>05 / Together</span><h3>Family & Maternity</h3></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85" alt="Concert and live event photography"><div class="service-label"><span>06 / On the scene</span><h3>Corporate & Lifestyle</h3></div></article>
+</div></div></section>
+<section class="portfolio" id="portfolio"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected moments</div><h2 class="section-title">A glimpse through our lens.</h2><p>A few stories from behind the camera.</p></div>
+<div class="gallery">
+<img class="tall" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=900&q=85" alt="Wedding couple portrait">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Portrait in natural light">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration">
+<img class="wide" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85" alt="Friends celebrating together">
+</div></div></section>
+<section class="quote"><div class="wrap"><div class="eyebrow">The Epic promise</div><blockquote>“The best photographs don't just show how a moment looked. They remind you how it felt.”</blockquote><cite>Epic Photography</cite></div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><div class="eyebrow">Let's make it memorable</div><h2>Have a moment<br>worth capturing?</h2><p>Tell us what you're planning. We'd love to hear your story and help you bring it to life.</p><div class="contact-details">Email: hello@epicphotography.com<br>Phone / WhatsApp: +91 XXXXX XXXXX<br>Instagram: @epicphotography</div></div>
+<form class="form" id="contactForm"><input required placeholder="Your name" aria-label="Your name"><input required type="email" placeholder="Email address" aria-label="Email address"><input placeholder="Phone / WhatsApp" aria-label="Phone or WhatsApp"><select aria-label="Type of photoshoot"><option value="">What are you looking for?</option><option>Wedding / Engagement</option><option>Portrait / Personal</option><option>Family / Maternity</option><option>Event / Birthday</option><option>Fashion / Portfolio</option><option>Corporate / Product</option><option>Other</option></select><textarea placeholder="Tell us a little about your shoot..." aria-label="Message"></textarea><button class="btn" type="submit">Send enquiry&nbsp; ↗</button><small id="formNote" style="color:#aaa">Demo form — connect your email or WhatsApp before publishing.</small></form>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span><strong>EPIC PHOTOGRAPHY</strong> &nbsp; © <span id="year"></span> All rights reserved.</span><span>Made for moments that matter.</span></div></footer>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formNote').textContent='Thanks! Connect this form to your email or WhatsApp to receive enquiries.';});
+</script>
+</body></html>
